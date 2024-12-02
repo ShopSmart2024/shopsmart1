@@ -136,6 +136,7 @@ app.post('/log-order', async (req, res) => {
 // Serve invoices
 app.use('/invoices', express.static(path.join(__dirname, 'invoices')));
 
+// Listen on the specified port
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
